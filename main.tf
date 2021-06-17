@@ -8,10 +8,6 @@ variable ARM_TENANT_ID="<your tenant id>" {}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    subscription id = var your subscription id
-    client id = var client id
-    client secret = var client secret
-    tenant id = var tenant id
     version = "~>2.0"
     features {}
 }
