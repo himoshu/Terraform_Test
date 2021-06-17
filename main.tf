@@ -1,10 +1,10 @@
-variable "subscription_id" {}
-variable "tenant_id" {}
+export ARM_SUBSCRIPTION_ID=${id}
+export ARM_CLIENT_ID=${appID}
+export ARM_CLIENT_SECRET=${password}
+export ARM_TENANT_ID=${tenantId}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    subscription_id = "${var.subscription_id}"
-    tenant_id = "${var.tenant_id}"
     version = "~>2.50.0"
     features {}
 }
