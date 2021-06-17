@@ -1,6 +1,12 @@
+export ARM_SUBSCRIPTION_ID = "SUBSCRIPTION_ID" {}
+export ARM_CLIENT_ID = "CLIENT_ID" {}
+export ARM_CLIENT_SECRET = "CLIENT_SECRET" {}
+export ARM_TENANT_ID = "TENANT_ID" {}
+
+
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    version = "~>2.0"
+    version = "~>2.31.1"
     features {}
 }
 
