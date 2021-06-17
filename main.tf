@@ -1,7 +1,7 @@
-export ARM_SUBSCRIPTION_ID=${id}
-export ARM_CLIENT_ID=${appID}
-export ARM_CLIENT_SECRET=${password}
-export ARM_TENANT_ID=${tenantId}
+variable ARM_SUBSCRIPTION_ID=${id}
+variable ARM_CLIENT_ID=${appID}
+variable ARM_CLIENT_SECRET=${password}
+variable ARM_TENANT_ID=${tenantId}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
