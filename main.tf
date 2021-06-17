@@ -1,3 +1,9 @@
+export ARM_SUBSCRIPTION_ID="<your subscription id>"
+export ARM_CLIENT_ID="<your servicce principal appid>"
+export ARM_CLIENT_SECRET="<your service principal password>"
+export ARM_TENANT_ID="<your service principal tenant>"
+
+
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
     # The "feature" block is required for AzureRM provider 2.x. 
