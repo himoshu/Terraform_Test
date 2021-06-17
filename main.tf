@@ -1,14 +1,11 @@
-variable "ARM_SUBSCRIPTION_ID" {} 
-variable "ARM_CLIENT_ID" {}
-variable "ARM_CLIENT_SECRET" {}
-variable "ARM_TENANT_ID" {}
+variable "subscription_id" {}
+variable "tenant_id" {}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    var.ARM_SUBSCRIPTION_ID
-    var.ARM_CLIENT_ID
-    var.ARM_CLIENT_SECRET
-    var.ARM_TENANT_ID
+    subscription_id = "${var.subscription_id}"
+    tenant_id = "${var.tenant_id}"
+    use_msi = true
     version = "~>2.50.0"
     features {}
 }
