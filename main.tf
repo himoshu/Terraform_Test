@@ -1,13 +1,17 @@
-export ARM_SUBSCRIPTION_ID="<your subscription id>"
-export ARM_CLIENT_ID="<your servicce principal appid>"
-export ARM_CLIENT_SECRET="<your service principal password>"
-export ARM_TENANT_ID="<your service principal tenant>"
+variable ARM_SUBSCRIPTION_ID="<your subscription id>" {}
+variable ARM_CLIENT_ID="<your servicce principal appid>" {}
+variable ARM_CLIENT_SECRET="<your service principal password>" {}
+variable ARM_TENANT_ID="<your service principal tenant>" {}
+
+
 
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    # The "feature" block is required for AzureRM provider 2.x. 
-    # If you're using version 1.x, the "features" block is not allowed.
+    your subscription id = var your subscription id
+    your servicce principal appid = var your servicce principal appid
+    your service principal password = var your service principal password
+    your service principal tenant = var your service principal tenant
     version = "~>2.0"
     features {}
 }
