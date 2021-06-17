@@ -1,10 +1,14 @@
-variable ARM_SUBSCRIPTION_ID = ${id}
-variable ARM_CLIENT_ID = ${appID}
-variable ARM_CLIENT_SECRET = ${password}
-variable ARM_TENANT_ID = ${tenantId}
+variable "subscription_id" {}
+variable "tenant_id" {}
+variable "client_id" {}
+variable "client_secret" {}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
+    subscription_id = "${var.subscription_id}"
+    tenant_id = "${var.tenant_id}"
+    client_id = "${var.client_id}"
+    client_secret = "${var.client_secret}"
     version = "~>2.50.0"
     features {}
 }
