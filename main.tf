@@ -1,7 +1,7 @@
 variable ARM_SUBSCRIPTION_ID="<your subscription id>" {}
-variable ARM_CLIENT_ID="<your servicce principal appid>" {}
-variable ARM_CLIENT_SECRET="<your service principal password>" {}
-variable ARM_TENANT_ID="<your service principal tenant>" {}
+variable ARM_CLIENT_ID="<your client id>" {}
+variable ARM_CLIENT_SECRET="<your client secret>" {}
+variable ARM_TENANT_ID="<your tenant id>" {}
 
 
 
@@ -9,9 +9,9 @@ variable ARM_TENANT_ID="<your service principal tenant>" {}
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
     subscription id = var your subscription id
-    servicce principal appid = var your servicce principal appid
-    service principal password = var your service principal password
-    service principal tenant = var your service principal tenant
+    servicce principal appid = var client id
+    service principal password = var client secret
+    service principal tenant = var tenant id
     version = "~>2.0"
     features {}
 }
