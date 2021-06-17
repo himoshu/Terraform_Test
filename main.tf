@@ -8,10 +8,10 @@ variable ARM_TENANT_ID="<your service principal tenant>" {}
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
-    your subscription id = var your subscription id
-    your servicce principal appid = var your servicce principal appid
-    your service principal password = var your service principal password
-    your service principal tenant = var your service principal tenant
+    subscription id = var your subscription id
+    servicce principal appid = var your servicce principal appid
+    service principal password = var your service principal password
+    service principal tenant = var your service principal tenant
     version = "~>2.0"
     features {}
 }
