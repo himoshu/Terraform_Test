@@ -1,8 +1,3 @@
-export ARM_SUBSCRIPTION_ID = "0e709027-5064-44b5-9f01-9b5d34103807"
-export ARM_CLIENT_ID = "da62146c-d2dc-4a5c-b987-f4443b38b523" 
-export ARM_CLIENT_SECRET = "Tt_uhiaIWBUBz9YNdS_fdpvyUbls9euLA5"
-export ARM_TENANT_ID = "294074e7-4420-4307-9fcc-c6531d0f7366"
-
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
