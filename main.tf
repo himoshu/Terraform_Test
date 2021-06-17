@@ -5,7 +5,6 @@ variable "tenant_id" {}
 provider "azurerm" {
     subscription_id = "${var.subscription_id}"
     tenant_id = "${var.tenant_id}"
-    use_msi = true
     version = "~>2.50.0"
     features {}
 }
